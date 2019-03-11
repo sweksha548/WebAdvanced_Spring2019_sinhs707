@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Why Climate Change</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/stylecc.css">
+</head>
+
+
+<body onload="startTime()">
+	
+	<div class="menubar">
+		 <nav>
+		 	<li><a class="submenu link1" href="index.htm" tabindex="1">ABOUT</a></li> 
+		 	<li><a class="submenu link2 active" href="cc.html" tabindex="1">CLIMATE CHANGE</a></li> 
+		 	<li><a class="submenu link3" href="vr.htm" tabindex="1">VR EXPERIENCE</a></li>
+		 	<li><a class="submenu link4" href="game.htm" tabindex="1">GAME</a></li>
+		 	<li><a class="submenu link5" href="gallery.htm" tabindex="1">GALLERY</a></li>
+		 	<li><a class="submenu link6" href="portfolio.htm" tabindex="1">PORTFOLIO</a></li>
+		</nav>
+		<img class="image1" src="gallery/earth.gif">
+	</div>
+
+	
+
+	<div class="menubar1">
+		 <nav>
+		 	<li><a class="submenu1 link1" href="#first" tabindex="1">CLIMATE CHANGE</a></li> 
+		 	<li><a class="submenu1 link2" href="#second" tabindex="1">NORTHERN LIGHTS</a></li> 
+		 	<li><a class="submenu1 link3" href="#third" tabindex="1">FALL</a></li>
+		 	<li><a class="submenu1 link4" href="#fourth" tabindex="1">POLAR ICE CAPS</a></li>
+		 	<li><a class="submenu1 link5" href="#fifth" tabindex="1">DROUGHTS</a></li>
+		 	<li><a class="submenu1 link5" href="#fifth" tabindex="1">WILDFIRES</a></li>
+		 	<li><a class="submenu1 link6" href="#sixth" tabindex="1">LIVE DATA</a></li>
+		</nav>
+	</div>
+
+	<div id="first" class="first page">
+		<div class="first-container">
+			<span class="big-text t1">WHY CLIMATE CHANGE?</span>	 	
+		</div>	
+
+		<div class="header1"><!--Start of header4-->	
+  				<img class="mySlides" src="gallery/1.jpg" style="width:100%">
+  				<img class="mySlides" src="gallery/2.jpg" style="width:100%">
+  				<img class="mySlides" src="gallery/3.jpg" style="width:100%">
+  				<img class="mySlides" src="gallery/4.jpg" style="width:100%">
+  				<img class="mySlides" src="gallery/5.jpg" style="width:100%">
+		</div><!--End of header4-->
+
+			<script>
+						var myIndex = 0;
+						carousel();
+
+						function carousel() {
+						    var i;
+						    var x = document.getElementsByClassName("mySlides");
+						    for (i = 0; i < x.length; i++) {
+						       x[i].style.display = "none";  
+						    }
+						    myIndex++;
+						    if (myIndex > x.length) {myIndex = 1}    
+						    x[myIndex-1].style.display = "block";  
+						    setTimeout(carousel, 2000); // Change image every 2 seconds
+						}
+			</script>	
+	</div>
+
+
+<!-------------------------------------Northern lights------------------------------------->
+	<div id="second" class="second page">
+		<div class="second-container">	
+			<span class="big-text t2">NORTHERN LIGHTS</span> 	
+		</div>	
+		<section class="section1">
+			<img class="image5" src="gallery/24.jpg">
+			<img class="image5" src="gallery/25.jpg">
+			<p class="aurora">Changes in auroral activity over the years</p><br>
+			<p>This model gives a short-term forecast of the intensity of the auroral oval for both the northern and the southern hemisphere. It is based on the solar wind and interplanetary magnetic field (IMF) conditions as measured by the DSCOVR spacecraft. The map shows the intensity and the location of the auroral oval.</p>
+		</section>
+
+		<section class="section2">
+			<img class="image4" src="gallery/20.gif">
+		</section>	
+	</div>
+
+
+<!-------------------------------------Fall------------------------------------------->
+	<div id="third" class="third page">
+		<div class="third-container">
+			<span class="big-text t3">FALL COLOURS</span>	 	
+		</div>
+
+		<section class="section4">
+			<p>"Would we want to live in a world devoid of the colours of nature?"</p>
+		</section>
+
+		<section class="section3">
+			<img class="image4" src="gallery/21.gif">
+		</section>	
+	</div>
+
+
+<!-------------------------------------Ice caps--------------------------------------->
+	<div id="fourth" class="fourth page">
+		<div class="fourth-container">	 
+			<span class="big-text t4">MELTING OF POLAR ICE CAPS</span>		
+		</div>
+
+		<section class="section2">
+			<img class="image4" src="gallery/22.gif">
+		</section>
+
+		<section class="section4">
+			<video width="480" height="270" controls autoplay="">
+			  <source src="gallery/Polarbear.mp4" type="video/mp4">
+			</video>
+		</section>		
+	</div>
+
+
+<!-------------------------------------Droughts--------------------------------------->
+	<div id="fifth" class="fifth page">
+		<div class="fifth-container">	 
+			<span class="big-text t5">DROUGHTS & WILDFIRES</span>		
+		</div>	
+
+		<section class="section5">
+			<img src="gallery/26.jpg" height="300px" width="500px">
+			<p><b>“Taken as a whole, the range of published evidence indicates that the net damage costs of climate change are likely to be significant and to increase over time.”</b></p>
+			<p>- Intergovernmental Panel on Climate Change</p>
+		</section>	
+
+		<section class="section6">
+			<p><b>The California wildfires in November 2018 claimed 87 lives, with over 500 people still reported as missing.</b></p><br>
+			<img src="gallery/27.gif" height="300px" width="500px">
+		</section>
+	</div>
+
+
+<!-------------------------------------LIVE DATA------------------------------------->
+	<div id="sixth" class="sixth page">
+		<div class="sixth-container">	 
+			<span class="big-text t6">WEATHER AROUND THE WORLD</span>		
+		</div>	
+		
+		<div class="India">
+			<img class="sunny" src="json_gallery/1.png">
+			<img class="flag" src="json_gallery/4.png">
+			<div id="demo" class="data"></div>			
+		</div>
+
+		<div class="NY">
+			<img class="sunny" src="json_gallery/2.png">
+			<img class="flag" src="json_gallery/5.jpg">
+			<div id="demo1" class="data"></div>
+			<div id="txt"></div>
+			<p class="NYtime"><b>am</b></p>
+		</div>
+
+		<div class="London">
+			<img class="sunny" src="json_gallery/3.png">
+			<img class="flag" src="json_gallery/6.png">
+			<div id="demo2" class="data"></div>
+		</div>
+
+		<div class="Tokyo">
+			<img class="sunny" src="json_gallery/3.png">
+			<img class="flag" src="json_gallery/7.png">
+			<div id="demo3" class="data"></div>
+		</div>		
+	</div>
+
+
+	<footer>
+		<p>Copyright 2019 @Sweksha Sinha</p>
+	</footer>
+
+	<script type="text/javascript" src="js/cc.js"></script>
+	<script type="text/javascript" src="js/date.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/data1.js"></script>
+	<script type="text/javascript" src="js/data2.js"></script>
+	<script type="text/javascript" src="js/data3.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+</body>
+</html>
+
+<!-- Credist (Code sources)
+	- Menu Bar Code:
+		Copyright (c) 2017 by Adam Macias (http://codepen.io/adammacias/pen/WvxVRP) -->

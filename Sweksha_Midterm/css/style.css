@@ -1,0 +1,357 @@
+
+@import 'https://fonts.googleapis.com/css?family=Work+Sans:300,400,700';
+  
+  body{
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+  } 
+
+/* home page */
+
+  #home{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    position: relative;
+  }
+
+  .fixed{
+    position: fixed;
+  }
+
+  .big-text{
+    font-size: calc(2em + 1vw);
+    top: 50px;
+    font-family: 'Work Sans';
+    position: relative;
+    color: white;
+  }
+
+  .text1{
+    color: white;
+    text-align: center;
+    font-family: 'Palatino Linotype'; 
+    font-size: 30px; 
+    padding: 50px;
+  }
+
+
+  .quotes{
+    color: white;
+    font-size: 75px;
+    font-style: italic;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+
+/* first page */
+  .first{
+    width: 100%;
+    height: 60vh;
+    margin-left: 0vw;
+    z-index: 1;
+    background-color: #000000;
+    position: relative;
+    text-align: center;
+  }
+
+/* second page */
+  .second{
+    width: 100%;
+    height: 100vh;
+    margin-left: 0vw;
+    z-index: 1;
+    background-color: #262626;
+    position: relative;
+    text-align: center;
+  }
+
+/* third page */
+  .third{
+    width: 100%;
+    height: 80vh;
+    margin-left: 0vw;
+    z-index: 1;
+    background-color: #0b003f;
+    position: relative;
+    text-align: center;
+  }
+
+/* fourth page */
+  .fourth{
+    width: 100%;
+    height: 120vh;
+    margin-left: 0vw;
+    z-index: 1;
+    background-color: #262626;
+    position: relative;
+    text-align: center;
+  }
+
+/* fifth page */
+  .fifth{
+    width: 100%;
+    height: 100vh;
+    margin-left: 0vw;
+    z-index: 1;
+    background-color: black;
+    position: relative;
+    text-align: center;
+  }
+
+
+
+/* ---------------------------------------menu page---------------------------------------- */
+  .menubar{
+    background-color: #f8f7fb;
+    width: 100vw;
+    height: 50px;
+    margin-left: 0;
+    margin-top: -50px;
+    opacity: 0.7;
+    z-index: 10;    
+  }
+
+  .fixed{
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 100;
+
+  }
+  .menubar nav{
+    align-content: center;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+    padding-top: 11px;
+    width: 70vw;
+    height: 50px;
+    margin-left: 45vw;
+    margin-top: -50px;
+    z-index: 20; 
+
+  }
+
+  .menubar nav li{
+    position: relative;
+    display: inline-block;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    float: left;
+  }
+
+
+  .submenu{
+    text-decoration: none;
+    color: #000000;
+    background-color: none;
+    font-size: 15px;
+    font-family: 'Work Sans', sans-serif;
+    padding: 12px;
+
+  }
+
+  .submenu:hover{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+  }
+
+
+  .active{
+    color: white;
+    background-color: black;
+  }
+
+  .image{
+    width: 100%;
+  }
+
+
+  .image1{
+    width: 40px;
+    height: 40px; 
+    float: left;
+    margin-left: 650px;
+    margin-top: 5px;
+  }
+
+
+/*-------------------------------Fluctuating Weather------------------------------*/
+.section1{
+  float: right;
+  height: 40vh;
+  width: 30%;
+ /* border: 1px solid white;*/
+  margin-right: 100px;
+  margin-top: 200px;
+  color: #dbaef9;
+  font-size: 20px;
+}
+
+.section2{
+  float: left;
+  height: 60vh;
+  width: 50%;
+  /*border: 1px solid white;*/
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.image4{
+  height: 450px;
+  width: 800px;
+}
+
+
+
+/*-------------------------------------VR EXPERIENCE------------------------------*/
+  .image2{
+    width: 500px;
+    height: 275px;
+  }
+
+  .image3{
+    width: 500px;
+    height: 275px;
+    margin-top: 25px;
+    float: right;
+  }
+
+  .sec1{
+    float: left;
+    height:90vh;
+    width: 33%;
+    /*border: 1px solid white;*/
+    margin-left: 50px;
+    margin-top: 95px;
+  }
+
+  .sec2{
+    float: right;
+    height:90vh;
+    width: 58%;
+    /*border: 1px solid white;*/
+    margin-right: 50px;
+    margin-top: 95px;
+  }
+
+  .text3{
+    color: white;
+    font-size: 15px;
+    padding: 5px 5px;
+  }
+
+  .text4{
+    color: #fdffa8;
+    font-size: 25px;
+    padding: 10px 10px;
+  }
+
+  .text5{
+    color: #f7be99;
+    font-size: 20px;
+    padding: 5px 5px;
+  }
+
+
+  article{
+    height:80vh;
+    width: 40%;
+    /*border: 1px solid white;*/
+    margin-left: 10px;
+  }
+
+/*-------------------------------------Start of GALLERY------------------------------*/
+  div.gallery {
+    border: 1px solid #ccc;
+    margin-top: 140px;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*For third div*/
+  div.gallery1 {
+    border: 1px solid #ccc;
+    margin-top: 140px;
+  }
+
+  div.gallery1:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery1 img {
+    width: 100%;
+    height: 200px;
+  }
+  /*-------------*/
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+
+  /*For third div*/
+  .responsive1{
+    padding: 0 6px;
+    float: left;
+    width: 19.99999%;
+  }
+  /*--------------*/
+
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/*End of GALLERY*/
+
+  footer{
+    opacity: 0.9;
+    width: 98.9vw;
+    height: 8vh;
+    bottom: 0;
+    position: fixed;
+    margin-top: -50px;
+    z-index: 30;
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+  }

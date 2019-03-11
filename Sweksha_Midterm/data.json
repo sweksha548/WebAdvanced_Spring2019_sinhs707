@@ -1,0 +1,39 @@
+[
+  {
+    "id": 0,
+    "country": "New Delhi, India",
+    "flag": "json_gallery/4.png",
+    "temp" : "68 F",
+    "day" : "Wed",
+    "time" : "",
+  },
+
+  {
+    "id": 1,
+    "country": "New York, USA",
+    "flag": "json_gallery/5.jpg",
+    "temp" : "45 F",
+    "day" : "Wed",
+    "time" : "",
+  },
+
+  {
+    "id": 2,
+    "country": "London, UK",
+    "flag": "json_gallery/6.png",
+    "temp" : "52 F",
+    "day" : "Wed",
+    "time" : "",
+  },
+
+
+  {
+    "id": 3,
+    "country": "Tokyo, Japan",
+    "flag": "json_gallery/7.png",
+    "temp" : "59 F",
+    "day" : "Wed",
+    "time" : "",
+  }
+
+]
