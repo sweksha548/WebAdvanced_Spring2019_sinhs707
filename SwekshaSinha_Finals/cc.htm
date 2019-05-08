@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>CLIMATE CHANGE</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css"></style>
+	
+</head>
+
+
+<body>
+		<script src="//d3js.org/d3.v3.min.js"></script>
+		<script type="text/javascript">
+				var width = 1515,
+			    height = 1200;
+
+				var sample = uniformRandomSampler(width, height, 10000),
+				    samples = [],
+				    s;
+
+				while (s = sample()) samples.push(s);
+
+				var voronoi = d3.geom.voronoi()
+				    .clipExtent([[0, 0], [width, height]]);
+
+				var canvas = d3.select("body").append("canvas")
+				    .attr("width", width)
+				    .attr("height", height);
+
+				var context = canvas.node().getContext("2d");
+
+				var image = new Image;
+				image.src = "images/jelly1.jpg";
+				image.onload = start;
+
+				function start() {
+				  context.drawImage(image, 0, 0);
+				  image = context.getImageData(0, 0, width, height);
+				  voronoi(samples).forEach(function(cell) {
+				    var x = Math.floor(cell.point[0]),
+				        y = Math.floor(cell.point[1]),
+				        i = (y * width + x) << 2;
+				    context.fillStyle = d3.rgb(image.data[i + 0], image.data[i + 1], image.data[i + 2]) + "";
+				    context.beginPath();
+				    context.moveTo(cell[0][0], cell[0][1]);
+				    for (var i = 1, n = cell.length; i < n; ++i) context.lineTo(cell[i][0], cell[i][1]);
+				    context.closePath();
+				    context.fill();
+				  });
+				}
+
+				function uniformRandomSampler(width, height, numSamplesMax) {
+				  var numSamples = 0;
+				  return function() {
+				    if (++numSamples > numSamplesMax) return;
+				    return [Math.random() * width, Math.random() * height];
+				  };
+				}
+		</script>
+
+		<div class="wrapper">
+			<header>
+				<div class="right">				
+					<div class="menubar">
+						<nav>
+							<li><a class="submenu active" href="cc.htm" tabindex="1">ABOUT</a></li>
+							<li><a class="submenu" href="gallery.htm" tabindex="1">GALLERY</a></li>
+							<li><a class="submenu" href="apicc.html" tabindex="1">THE WORLD</a></li>
+						</nav>
+					</div>
+					
+				</div>		
+			</header>
+
+
+			<section>
+				<article class="article1">
+					<p class="text1" style="font-family: Times New Roman, Times, serif;">WHY WE SEE THINGS</p>
+				</article>
+
+				<article id="work">
+					<div ><img src="images/jellyfish.gif" class="items" style="float: left;"></div>
+					<div ><p class="items" class="text2" style="float: right; color: white; font-size: 35px; text-align: center; font-weight: bold; font-family: Times New Roman, Times, serif;">"Ocean acidification might kill all jellyfishes."</p></div>
+					<div ><p class="items" class="text2" style="float: left; color: white;font-size: 35px; text-align: center; font-weight: bold; font-family: Times New Roman, Times, serif;">"Coral reefs are bleaching more frequently due to climate change."</p></div>
+					<div ><img src="images/coralreefs.gif" class="items" style="float: right;"></div>
+					<div ><img src="images/whales.gif" class="items" style="float: left;"></div>
+					<div ><p class="items" class="text2" style="float: right; color: white; font-size: 35px; text-align: center; font-weight: bold; font-family: Times New Roman, Times, serif;">The world's finest wilderness lies<br> beneath the waves...</p></div><br>
+				</article>
+			</section>
+
+
+			<section><br>				
+				<img src="images/playtech.jpg" style="width: 100%; height: 100%">
+				<img src="images/VR.jpg" style="width: 100%; height: 100%">
+				<h1 class="text2" style="font-size: 45px;">An immersive experience on Climate Change</h1>
+			</section>
+
+			<footer>
+				<p>Copyright 2019 @Sweksha Sinha</p>
+			</footer>
+
+		</div>
+</body>
+
+</html>
+
